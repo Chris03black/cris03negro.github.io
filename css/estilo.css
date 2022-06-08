@@ -1,0 +1,311 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h1{font-size: 3.5sem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 50px;
+}
+h2{font: size 1.6em;
+color: rgb(255, 255, 255);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+h3{font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(255, 255, 255);}
+p{font-size: 1.2em;
+color: rgb(255, 255, 255);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+ul{list-style: none;}
+li{font-size: 2em;
+text-align: left;}
+.logo{
+    transition: linear .2s;
+}
+.logo:hover{
+    font-size: 50px;
+    color: #2698e4;
+    transform: rotate(360deg);
+}
+
+h1{
+    transition: linear .2s;
+}
+h1:hover{
+    font-size: 70px;
+    color: #2698e4;
+    transform: rotate(360deg);
+}
+body{
+    margin: 0;
+    font-family: cursive;
+    background-image: url(../img/animado.gif);
+    background-color: rgba(107, 177, 224, 0.827);
+    background-repeat: no-repeat;
+}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2 px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(5, 87, 87);
+}
+button:hover{
+    background-color: rgb(80, 255, 11);
+
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.253);
+    width: 100%;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0px;
+
+}
+nav
+{
+    margin: 0px;
+    
+}
+a{
+    margin-left: 50px;
+}
+
+
+    header .logo{
+    margin: 0;
+    padding: 25px 30px ;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 1.45em;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav{
+    display: flex;
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.205);
+}
+
+
+header a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+
+.hero img{
+    border-radius: 30%;
+    width: 300px;
+    height: 300px;
+}
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgba(255, 255, 255, 0.718);
+    
+}
+.hero h1{
+    color: white;
+}
+.negro{
+    color: aquamarine;
+}
+#barra{
+    width: 100%
+}
+#somos-proya {
+    text-align: center;
+    justify-content: left;
+    background-color: rgba(73, 116, 151, 0.562);
+    width: 100%;
+    height: 80%;
+   opacity: 10;
+}
+#Nuestros-programas{
+    background-color: rgb(10, 9, 9);
+    text-align: center;
+}
+
+#Nuestros-programas .container{
+    padding: 150px 12px;
+    text-align: end;
+    background-color: rgba(199, 13, 13, 0.626);
+
+}
+#Nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+#Nuestros-programas p{
+    display: none;
+    text-decoration-color: rgb(9, 15, 15);
+}
+
+#Nuestros-programas .carta{
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 15px;
+}
+
+.carta:first-child{
+background-image: url(../img/arbol.jpg);
+font-size: small;
+font-family: cursive;
+height: auto;
+}
+
+.carta:nth-child(2){
+background-image: url(../img/crab.png);
+font-family: cursive;
+font-size: small;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+
+.carta:nth-child(3){
+background-image: url(../img/entorno.jpg);
+font-size: small;
+font-family: cursive;
+}
+
+#Nosotros .container{
+    text-align: center;
+    padding: 90px 12px;    
+}
+
+#Nosotros{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#Contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: wheat;
+    height: 60vh;
+}
+footer{
+    background-color:rgba(237, 63, 63, 0.829);
+}  
+
+footer p{
+    margin: 0;
+    color: rgb(3, 3, 3);
+    align-items: flex-end;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -200px;
+}
+.icons {
+    font-size: 30px;
+}
+.icons i {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        justify-content: space-between;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #Somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #Somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    #Somos-proya h2{
+        margin-top: 0px;
+    }
+    
+    somos-proya .img-container{
+        background-image: url(../img/master.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 400px;
+    }
+    #Nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+
+    }
+    #Nuestros-programas p{
+        display: block;
+    }
+    
+    #Nuestros-programas h3{
+        margin-top: 0;
+
+    }
+    
+    #Nuestros-programas .carta{
+        padding: 100px;
+    }
+
+}
+
+
+
+
